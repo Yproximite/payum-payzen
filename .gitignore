@@ -1,0 +1,12 @@
+.idea/
+vendor/
+
+# Binaries
+bin/*
+!bin/.gitkeep
+
+# PHP-CS-Fixer
+.php-cs-fixer.cache
+
+# PHPUnit
+.phpunit.result.cache
