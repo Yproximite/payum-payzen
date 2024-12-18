@@ -1,0 +1,41 @@
+parameters:
+	ignoreErrors:
+		-
+			message: "#^Property Yproximite\\\\Payum\\\\Payzen\\\\Tests\\\\Action\\\\CaptureActionTest\\:\\:\\$requestClass \\(Payum\\\\Core\\\\Request\\\\Generic\\) does not accept default value of type string\\.$#"
+			count: 1
+			path: tests/Action/CaptureActionTest.php
+
+		-
+			message: "#^Property Yproximite\\\\Payum\\\\Payzen\\\\Tests\\\\Action\\\\ConvertPaymentActionTest\\:\\:\\$requestClass \\(Payum\\\\Core\\\\Request\\\\Generic\\) does not accept default value of type string\\.$#"
+			count: 1
+			path: tests/Action/ConvertPaymentActionTest.php
+
+		-
+			message: "#^Call to an undefined method PHPUnit\\\\Framework\\\\MockObject\\\\MockObject\\|Yproximite\\\\Payum\\\\Payzen\\\\Api\\:\\:expects\\(\\)\\.$#"
+			count: 1
+			path: tests/Action/NotifyActionTest.php
+
+		-
+			message: "#^Property Yproximite\\\\Payum\\\\Payzen\\\\Tests\\\\Action\\\\NotifyActionTest\\:\\:\\$requestClass \\(Payum\\\\Core\\\\Request\\\\Generic\\) does not accept default value of type string\\.$#"
+			count: 1
+			path: tests/Action/NotifyActionTest.php
+
+		-
+			message: "#^Property Payum\\\\Core\\\\Tests\\\\GenericActionTest\\:\\:\\$action \\(Payum\\\\Core\\\\Action\\\\ActionInterface\\) does not accept object\\.$#"
+			count: 1
+			path: tests/Action/StatusActionTest.php
+
+		-
+			message: "#^Property Yproximite\\\\Payum\\\\Payzen\\\\Tests\\\\Action\\\\StatusActionTest\\:\\:\\$requestClass \\(Payum\\\\Core\\\\Request\\\\Generic\\) does not accept default value of type string\\.$#"
+			count: 1
+			path: tests/Action/StatusActionTest.php
+
+		-
+			message: "#^Cannot call method add\\(\\) on DateTimeImmutable\\|false\\.$#"
+			count: 2
+			path: tests/PaymentConfigGeneratorTest.php
+
+		-
+			message: "#^Call to method ReflectionClass\\<Yproximite\\\\Payum\\\\Payzen\\\\PayzenGatewayFactory\\>\\:\\:isSubclassOf\\(\\) with 'Payum\\\\\\\\Core…' will always evaluate to true\\.$#"
+			count: 1
+			path: tests/PayzenGatewayFactoryTest.php
