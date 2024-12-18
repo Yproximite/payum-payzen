@@ -46,7 +46,7 @@ payum:
       certif_test: 'change it' # required 
       sandbox: true
       hash_algorithm: 'algo-sha1' # or 'algo-hmac-sha256'
-      endpoint: 'system-pay' # 'system-pay', 'sogecommerce'
+      endpoint: 'systempay' # 'systempay', 'sogecommerce', 'payzen'
 ```
 
 ### With Payum
@@ -69,7 +69,7 @@ $payum = (new PayumBuilder())
         'certif_test'    => 'change it', // required
         'sandbox'        => true,
         'hash_algorithm' => 'algo-sha1' // or 'algo-hmac-sha256'
-        'endpoint'       => 'system-pay' // 'system-pay', 'sogecommerce'
+        'endpoint'       => 'systempay' // 'system-pay', 'sogecommerce', 'payzen'
     ])
 
     ->getPayum()
