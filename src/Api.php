@@ -90,7 +90,7 @@ class Api
     /**
      * Transaction sequence number
      *
-     * @see https://paiement.systempay.fr/doc/en-EN/form-payment/standard-payment/vads-sequence-number.html
+     * @see https://payzen.io/fr-FR/form-payment/reference/vads-sequence-number.html
      */
     public const FIELD_VADS_SEQUENCE_NUMBER = 'vads_sequence_number';
 
@@ -142,7 +142,7 @@ class Api
     /**
      * This parameter defines the source of the notification (also called IPN).
      *
-     * @see https://paiement.systempay.fr/doc/en-EN/form-payment/standard-payment/vads-url-check-src.html
+     * @see https://payzen.io/fr-FR/form-payment/reference/vads-url-check-src.html
      */
     public const FIELD_VADS_URL_CHECK_SRC = 'vads_url_check_src';
 
@@ -314,6 +314,18 @@ class Api
     public function getSignature(array $details): string
     {
         return $this->signatureGenerator->generate($details, $this->getCertificate(), $this->getHashAlgorithm());
+    }
+
+    /**
+     * @return array<int, string>
+     */
+    public static function getAvailableEndpoints(): array
+    {
+        return [
+            self::OPTION_ENDPOINT_PAYZEN,
+            self::OPTION_ENDPOINT_SYSTEMPAY,
+            self::OPTION_ENDPOINT_SOGECOMMERCE,
+        ];
     }
 
     protected function getApiEndpoint(): string
