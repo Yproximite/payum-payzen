@@ -27,7 +27,7 @@ First register the gateway factory in your services definition:
 services:
     yproximite.payzen_gateway_factory:
         class: Payum\Core\Bridge\Symfony\Builder\GatewayFactoryBuilder
-        arguments: [Yproximite\Payum\SystemPay\PayzenGatewayFactory]
+        arguments: [Yproximite\Payum\Payzen\PayzenGatewayFactory]
         tags:
             - { name: payum.gateway_factory_builder, factory: payzen }
 ```
