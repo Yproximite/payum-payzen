@@ -1,6 +1,8 @@
 .idea/
 vendor/
 
+composer.lock
+
 # Binaries
 bin/*
 !bin/.gitkeep

@@ -8,7 +8,7 @@ use Payum\Core\GatewayInterface;
 use Payum\Core\Reply\HttpResponse;
 use Payum\Core\Request\GetHttpRequest;
 use Payum\Core\Request\Notify;
-use Payum\Core\Tests\GenericActionTest;
+use Yproximite\Payum\Payzen\Tests\GenericActionTest;
 use PHPUnit\Framework\MockObject\MockObject;
 use Yproximite\Payum\Payzen\Action\NotifyAction;
 use Yproximite\Payum\Payzen\Api;

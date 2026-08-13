@@ -6,13 +6,13 @@ namespace Yproximite\Payum\Payzen\Tests\Action;
 
 use Payum\Core\Action\GetCurrencyAction;
 use Payum\Core\GatewayInterface;
+use Payum\Core\Model\Payment;
 use Payum\Core\Model\PaymentInterface;
 use Payum\Core\Request\Convert;
 use Payum\Core\Request\GetCurrency;
-use Payum\Core\Tests\GenericActionTest;
-use Payum\Core\Tests\Mocks\Entity\Payment;
 use PHPUnit\Framework\MockObject\MockObject;
 use Yproximite\Payum\Payzen\Action\ConvertPaymentAction;
+use Yproximite\Payum\Payzen\Tests\GenericActionTest;
 
 class ConvertPaymentActionTest extends GenericActionTest
 {
