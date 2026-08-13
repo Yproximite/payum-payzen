@@ -7,7 +7,7 @@ namespace Yproximite\Payum\Payzen\Tests\Action;
 use Payum\Core\Model\Token;
 use Payum\Core\Request\Capture;
 use Payum\Core\Security\GenericTokenFactoryInterface;
-use Payum\Core\Tests\GenericActionTest;
+use Yproximite\Payum\Payzen\Tests\GenericActionTest;
 use PHPUnit\Framework\MockObject\MockObject;
 use Yproximite\Payum\Payzen\Action\CaptureAction;
 use Yproximite\Payum\Payzen\Api;

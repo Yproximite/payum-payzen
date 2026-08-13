@@ -5,7 +5,7 @@ declare(strict_types=1);
 namespace Yproximite\Payum\Payzen\Tests\Action;
 
 use Payum\Core\Request\GetHumanStatus;
-use Payum\Core\Tests\GenericActionTest;
+use Yproximite\Payum\Payzen\Tests\GenericActionTest;
 use Yproximite\Payum\Payzen\Action\StatusAction;
 use Yproximite\Payum\Payzen\Request\RequestStatusApplier;
 
